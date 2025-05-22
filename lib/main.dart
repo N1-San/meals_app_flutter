@@ -30,6 +30,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      builder: (context, child) {
+          return Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: child,
+          );
+        },
       theme: theme,
       home: const TabsScreen()
     );
