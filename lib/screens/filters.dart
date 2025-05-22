@@ -16,7 +16,9 @@ class FiltersScreen extends ConsumerWidget {
     final activeFilters = ref.watch(filtersProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Your Filters')),
+      appBar: AppBar(
+        title: const Text('Your Filters'),
+      ),
       body: Column(
         children: [
           SwitchListTile(
@@ -30,13 +32,13 @@ class FiltersScreen extends ConsumerWidget {
               'Gluten-free',
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             subtitle: Text(
               'Only include gluten-free meals',
               style: Theme.of(context).textTheme.labelMedium!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             activeColor: Theme.of(context).colorScheme.tertiary,
             contentPadding: const EdgeInsets.only(left: 34, right: 22),
@@ -52,13 +54,13 @@ class FiltersScreen extends ConsumerWidget {
               'Lactose-free',
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             subtitle: Text(
               'Only include lactose-free meals',
               style: Theme.of(context).textTheme.labelMedium!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             activeColor: Theme.of(context).colorScheme.tertiary,
             contentPadding: const EdgeInsets.only(left: 34, right: 22),
@@ -74,13 +76,13 @@ class FiltersScreen extends ConsumerWidget {
               'Vegetarian',
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             subtitle: Text(
               'Only include Vegetarian meals',
               style: Theme.of(context).textTheme.labelMedium!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             activeColor: Theme.of(context).colorScheme.tertiary,
             contentPadding: const EdgeInsets.only(left: 34, right: 22),
@@ -96,13 +98,13 @@ class FiltersScreen extends ConsumerWidget {
               'Vegan',
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             subtitle: Text(
               'Only include vegan meals',
               style: Theme.of(context).textTheme.labelMedium!.copyWith(
                 color: Theme.of(context).colorScheme.onSurface,
-              ),
+                  ),
             ),
             activeColor: Theme.of(context).colorScheme.tertiary,
             contentPadding: const EdgeInsets.only(left: 34, right: 22),
